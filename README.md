@@ -62,7 +62,7 @@ Bridge registers MCP tools: `nmap_scan`, `gobuster_scan`, `dirb_scan`, `nikto_sc
 - Vuln triage: `nikto_scan`, `sqlmap_scan`.  
 - WordPress checks: `wpscan_analyze`.  
 - SMB recon: `enum4linux_scan`.  
-- Credential tests (lab only): `hydra_attack`, `john_crack`.  
+- Credential tests (lab only): `hydra_attack`.
 - Exploit check: `metasploit_run`.  
 
 ---
@@ -72,10 +72,3 @@ Bridge registers MCP tools: `nmap_scan`, `gobuster_scan`, `dirb_scan`, `nikto_sc
 - Works with Claude Desktop, 5ire MCP clients.  
 - Extendable: other forensic tools (Volatility, SleuthKit) possible.  
 
----
-
-## Security
-- Executes system commands directly. Do not expose to untrusted networks.  
-- Use only in labs or with explicit permission.  
-
----
